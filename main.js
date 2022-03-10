@@ -30,8 +30,14 @@ For exmaple arraySubtract([7,9],[2,6]) should return [5,3]
 You can assume the arrays that are being input are of the same length
 */
 
-function arraySubtract(){
-
+function arraySubtract(arr1, arr2){
+    let subArray = [];
+for (let i =0; i < arr1.length-1; i++ ){
+    subArray.push(arr1[i] - arr2[i]);
+    
+}
+console.log(subArray);
+return subArray;
 }
 
 /* console.logs to test */
@@ -49,8 +55,11 @@ Add the second string to the end of the array
 Return the modified array
 */
 
-function surroundArray(){
-
+function surroundArray(arr1, str1, str2){
+    let newArray = arr1.unshift(str1);
+    let array2 = newArray.concat(str2);
+    console.log(array2);
+return array2;
 }
 
 /* console.logs to test */
@@ -120,8 +129,17 @@ return true if the string contains both an exclamation point (!) AND a question 
 Return false if otherwise
 */
 
-function exclamationAndQuestion(){
-    
+function exclamationAndQuestion(str){
+    let question = '?';
+    let exclaim = "!";
+       for (let i = 0; i < str.length; i++) {    
+        if (exclaim.includes(str.length) && question.includes(str.length)){
+          return true 
+        }
+        else {
+        false
+         }
+       }
 }
 
 /* console.logs to test */
@@ -138,9 +156,23 @@ No need to add the count of A and B together.  Again, we want an array with the 
 Your function should account for both cases (upper and lower) of each letter.
 */
 
-function countAB(){
+function countAB(str){
+    let a = 'a';
+    let b = 'b';
+    let array= [ ]
+    for (let i = 0; i < str.length; i++) { 
+           if (a.includes((str[i])));
+           array.push(0,[count++]);
+    }
+           else if ( b.includes((str[i])))   {
+            array.push(1,[count++]);
+           }
 
-}
+return array 
+
+    }
+
+
 
 /* console.logs to test */
 console.log("countAB");
@@ -157,7 +189,18 @@ Finally, return your modified array.
 Example: addStringIfLastS(['test', 'testing', 'testings'], 'TEST') => ['test', 'testing', 'testingsTEST']
 */
 
-function addStringIfLastS(){
+function addStringIfLastS(arr1, str){
+// let lasts = 's'
+//     for (let i = 0; i < arr.length; i++) {
+//         if arr1.includes(lasts){
+//             return 
+//         }
+        
+//         }
+//       }
+
+
+
 
 }
 
